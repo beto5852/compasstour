@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/styles.css" />
+    <script src="https://kit.fontawesome.com/d5a6a209d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- mis fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+    <!-- jquery slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <!-- <link href="/lib/jquery.bxslider.css" rel="stylesheet" /> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>Compass Tour</title>
+</head>
+
+<body>
+    <header>
+        <!-- menu navegacion bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+            <div><a class="navbar-brand" href="#"><img src="img/logonegro.png" alt="Logo" width="190px"
+                        height="50px" /></a></div>
+            <div class="searchbox">
+                <div class="box">
+                    <input type="text" placeholder="Search Anything..." required />
+                    <div class="searchbtn">
+                        <i class="fas fa-search icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OUR PACKAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            LANGUAGE</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">ESPAÑOL</a>
+                            <a class="dropdown-item" href="#!">ENGLISH</a>
+                            <a class="dropdown-item" href="#!">FRANÇAIS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="searchbox">
+                <div class="box">
+                    <input type="text" placeholder="Search Anything..." required />
+                    <div class="searchbtn">
+                        <i class="fas fa-search icon"></i>
+                    </div>
+                </div>
+            </div> -->
+        </nav>
+
+        <!-- slider jquery -->
+        <div class="slider">
+            <img src="img/slide1.jpg" alt="Granada" />
+            <img src="img/slide2.jpg" alt="Hotel" />
+            <img src="img/slide3.jpg" alt="Volcano" />
+        </div>
+    </header>
+
+
+    <!-- articulo del blog -->
+    <div class="container">
+        <div class="artmain">
+            <article class="mainarticle">
+                <h2>NICARAGUA: A TROPICAL PARADISE</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <a class="readbtn" href="#">READ MORE</a>
+            </article>
+        </div>
+        <video class="video" controls="controls" width="480" height="320" autoplay="autoplay" loop="loop">
+            <source src="video/playa.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <!-- Inicio tours categoría -->
+    <section class="maincontainer">
+        <h2>EXPLORE OUR CATEGORIES</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="tourcat">
+            <div class="category">
+                <img class="tourimg" src="img/coveradventure.jpg" alt="Kayak" />
+                <div>
+                    <a class="tourdef" href="kayakgranada.html">Adventure</a>
+                </div>
+            </div>
+            <div class="category">
+                <img class="tourimg" src="img/coverculture.jpg" alt="White Towns Tour" />
+                <div>
+                    <a class="tourdef" href="pueblosblancos.html">Culture</a>
+                </div>
+            </div>
+            <div class="category">
+                <img class="tourimg" src="img/coverecology.jpg" alt="Ecotour" />
+                <div>
+                    <a class="tourdef" href="ecologico.html">Ecology</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Populares -->
+    <section class="cardtours">
+        <h2>POPULAR TOURS</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+        <div class="card-content">
+            <div class="card">
+                <img class="card-img-top" src="img/tourcañon.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">SOMOTO CANNYON</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Price</h6>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="card-link">BOOK</a>
+                    <a href="#!" class="card-link">DETAILS</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/tourmombacho.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">MOMBACHO VOLCANO</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Price</h6>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="card-link">BOOK</a>
+                    <a href="#!" class="card-link">DETAILS</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/tourvolcan.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">LAVA TOUR</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Price</h6>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="card-link">BOOK</a>
+                    <a href="#!" class="card-link">DETAILS</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="img/toursandboarding.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">SANDBOARDING</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Price</h6>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="card-link">BOOK</a>
+                    <a href="#!" class="card-link">DETAILS</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Formulario -->
+    <section>
+        <div class="formulario">
+            <h2>BOOK YOUR NEXT EXPERIENCE</h2>
+            <form class="formfields" action="submeter-form.php" method="POST">
+                <div class="fields">
+                    <label for="name">NAME</label>
+                    <div>
+                        <input type="text" name="name" id="name" required="required" />
+                    </div>
+                </div>
+                <div class="fields">
+                    <label for="adults">ADULTS</label>
+                    <div>
+                        <input type="number" min="1" id="adults" required="required" />
+                    </div>
+                </div>
+                <div class="fields">
+                    <label for="children">CHILDREN</label>
+                    <div><input type="number" min="0" id="children" /></div>
+                </div>
+                <div class="fields">
+                    <label for="email">EMAIL</label>
+                    <div>
+                        <input type="email" name="email" id="email" required="required" />
+                    </div>
+                </div>
+                <div class="fields">
+                    <label for="tel">CONTACT NUMBER</label>
+                    <div>
+                        <input type="tel" name="tel" id="tel" required="required" placeholder="(Area code) Number" />
+                    </div>
+                </div>
+                <div class="fields">
+                    <label for="note">NOTE</label>
+                    <div><input type="text" name="note" id="note" /></div>
+                </div>
+                <div class="submitbtn">
+                    <label for="submit"></label>
+                    <input type="submit" value="SUBMIT" id="submit" />
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footerinfo">
+        <div class="info">
+            <h3>AGENCY INFO</h3>
+            <p class="agencyname">COMPASS TOURS</p>
+            <p>
+                TEL.: (+505) 25232523 <br />WHATSAPP: (+505) 25223532<br />EMAIL:
+                compasstours@gmail.com
+            </p>
+        </div>
+
+        <!-- link a redes sociales -->
+        <div class="socialmedia">
+            <h3>FOLLOW US</h3>
+            <div class="socialitems">
+                <ul class="socialitems-icon">
+                    <li>
+                        <a href="facebook.com/compasstours"><img src="img/facebook.png" alt="facebook" width="25"
+                                height="25" /></a>
+                    </li>
+                    <li>
+                        <a href="instagram.com/compasstours"><img src="img/instagram.png" alt="instagram" width="25"
+                                height="25" /></a>
+                    </li>
+                    <li>
+                        <a href="youtube.com/compasstours"><img src="img/youtube.png" alt="youtube" width="25"
+                                height="25" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- slider -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                auto: true,
+                mode: "fade",
+                pager: false,
+            });
+        });
+    </script>
+
+    <!-- fin de slider -->
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+:root {
+  --primary-color-dark: rgb(16, 24, 34);
+  --primary-color-light: #315c82;
+  --secondary-color-dark: rgb(122, 118, 118);
+  --secondary-color-light: #4a9f7f;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+}
+
+/* Menú de navegación Bootstrap*/
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Oswald";
+  font-weight: bold;
+  font-size: 15pt;
+}
+@media screen and (max-width: 1020px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 13pt;
+  }
+}
+.navbar-light .navbar-toggler:hover {
+  background: var(--primary-color-light);
+  transition: all 0.5s ease;
+}
+
+.collapse {
+  justify-content: center;
+}
+
+/* idioma */
+.dropdown-item {
+  font-family: "Oswald";
+  font-size: 13pt;
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  background: #315c82;
+}
+.nav-item {
+  text-align: center;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+  background: none;
+}
+
+/* Inicia slider */
+.slider {
+  width: 100%;
+}
+.slider img {
+  width: 100vw;
+  height: 550px;
+  object-position: center;
+  object-fit: cover;
+}
+.bx-wrapper {
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* busqueda */
+.searchbox {
+  font-family: "Oswald";
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  background: white;
+}
+.box {
+  position: relative;
+  padding: 5px;
+}
+.box input {
+  width: 240px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: rgb(122, 118, 118);
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+}
+.searchbtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #315c82;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1030px) {
+  .box input {
+    width: 200px;
+    height: 38px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .searchbox {
+    display: none;
+  }
+}
+/* articulo y video */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 30px 25px;
+}
+.artmain {
+  width: 40%;
+}
+.mainarticle {
+  width: 100%;
+  line-height: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  background: var(--secondary-color-light);
+}
+.mainarticle h2 {
+  font-family: "Oswald";
+  font-weight: bold;
+  text-align: center;
+  font-size: 18pt;
+  line-height: 40px;
+}
+.mainarticle p {
+  font-family: "Merriweather";
+  font-size: 12pt;
+  text-align: justify;
+  line-height: 30px;
+}
+.mainarticle a {
+  font-family: "Oswald";
+  text-decoration: none;
+  font-size: 12pt;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+.video {
+  width: 45%;
+  height: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .artmain {
+    width: 100%;
+  }
+  .mainarticle {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .video {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .artmain {
+    width: 100%;
+  }
+  .mainarticle {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .video {
+    width: 90%;
+  }
+}
+
+/* TOURS CATEGORIA */
+.maincontainer {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  /* background: var(--secondary-color-light); */
+}
+
+.maincontainer h2 {
+  font-family: "Oswald";
+  font-weight: bold;
+  font-size: 18pt;
+}
+.maincontainer p {
+  font-family: "Merriweather";
+  font-size: 12pt;
+}
+.tourcat {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 30px;
+}
+.category {
+  padding: 10px;
+}
+.tourimg {
+  width: 250px;
+  height: 180px;
+}
+.tourdef {
+  font-family: "Merriweather";
+  font-size: 12pt;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.tourdef:hover {
+  font-weight: 700;
+  color: var(--primary-color-dark);
+}
+
+/* TOURS POPULARES */
+.cardtours {
+  margin: 20px 0;
+}
+.cardtours h2 {
+  font-family: "Oswald";
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+.cardtours h6 {
+  font-family: "Oswald";
+  font-size: 13pt;
+  font-weight: bold;
+  color: black;
+}
+.cardtours p {
+  font-family: "Merriweather";
+  font-size: 12pt;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 761px) {
+  .card-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    border-bottom: 15px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 761) {
+    .card-img-top{
+        align-items: center;
+        width: 300px;
+        height: 350px;
+    }
+}
+
+/* Formulario */
+section {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+.formulario {
+  background-color: white;
+  width: 100%;
+  font-family: "Merriweather";
+  font-size: 12pt;
+  text-align: justify;
+}
+.formulario h2 {
+  font-family: "Oswald";
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+.formfields {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-rows: repeat(2, 2fr);
+  row-gap: 5px;
+  margin: 5px;
+  text-align: left;
+  margin-top: 30px;
+}
+.fields label {
+  text-align: left;
+}
+.fields input {
+  border: solid 1px #000;
+  background: white;
+  border-radius: 2px;
+}
+.submitbtn input {
+  color: black;
+  background: white;
+  padding: 4px;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+@media screen and (max-width: 992px) {
+  .formfields {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(4, 4fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formfields {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(4, 4fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .formfields {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 7fr);
+  }
+  .fields {
+    justify-content: center;
+  }
+  .formfields {
+    align-items: center;
+  }
+  .fields label {
+    text-align: center;
+  }
+}
+
+/* Inicia Footer */
+.footerinfo {
+  background: rgb(16, 24, 34);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+.info {
+  line-height: 20px;
+  color: white;
+  font-size: 8pt;
+  font-family: "Oswald";
+  font-weight: 200;
+}
+.info h3 {
+  font-family: "Oswald";
+  font-size: 14pt;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.agencyname {
+  font-size: 9pt;
+  margin-bottom: 10px;
+}
+.socialmedia {
+  margin-left: 0;
+}
+.socialmedia h3 {
+  color: white;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14pt;
+}
+.socialitems-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+.socialmedia li {
+  list-style: none;
+  align-items: center;
+  padding: 2px;
+}
+/* fin de footer */
